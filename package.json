@@ -1,0 +1,35 @@
+{
+  "name": "cop-builder-pattern",
+  "version": "1.0.0",
+  "description": "Boilerplate for building a Console application",
+  "main": "index.js",
+  "private": true,
+  "author": "Delta Defense",
+  "scripts": {
+    "test": "jest --watch",
+    "test-once": "jest --collectCoverage --coverageReporters lcov clover",
+    "lint": "eslint ./src --ext .ts,.tsx",
+		"lint-fix": "eslint ./src --ext .ts,.tsx --fix",
+    "build": "tsc",
+    "build-watch": "tsc --watch",
+    "once": "node ./dist index.js",
+    "unlink": "npm unlink --no-save cop-builder-pattern && npm unlink",
+    "start": "npm run unlink && npm run build && npm link"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.8.17",
+    "@types/jest": "^26.0.15",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "eslint": "^6.8.0",
+    "jasmine-core": "^2.5.2",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.4.4",
+    "tslib": "^2.2.0",
+    "tsmockit": "^1.0.5",
+    "typescript": "^4.2.3"
+  },
+  "bin": {
+    "cop-builder-pattern": "./dist/index.js"
+  }
+}

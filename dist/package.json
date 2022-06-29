@@ -1,0 +1,26 @@
+{
+  "name": "@DeltaDefense/cop-builder-pattern",
+  "author": {
+    "name": "Delta Defense"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeltaDefense/cop-builder-pattern.git"
+  },
+  "keywords": [
+    "typescript",
+    "console"
+  ],
+  "license": "MIT",
+  "version": "1.0.0",
+  "private": false,
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "dependencies": {},
+  "bin": {
+    "cop-builder-pattern": "./index.js"
+  }
+}
